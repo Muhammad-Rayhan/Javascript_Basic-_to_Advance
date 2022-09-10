@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+        text-align: center;
+        }
+        td{
+        width: 100px;
+        background-color: orange;
+        }
+        th{
+        background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <table>
+        <th>name</th>
+        <th>Total</th>
+        <th>Running Total</th>
+        <tr>
+            <td>Eric</td>
+            <td>100</td>
+            <td></td>
+        </tr>
+    
+        <tr>
+            <td>Lars</td>
+            <td>20</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Lars</td>
+            <td>80</td>
+            <td></td>
+        </tr>
+    
+        <tr>
+            <td>Patrick</td>
+            <td>200</td>
+            <td id="hello"></td>
+        </tr>
+    </table> -->
+
+    <table>
+        <thead>
+            <th>
+                <td>Serial</td>
+                <td>Davit</td>
+                <td>Credit</td>
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>5000</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>2</td>
+                <td>2000</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="devit"></td>
+                <td id="credit">00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- 
+    <script>
+        var total = 0;
+            $("td:nth-child(2)").each(function (index) {
+                total = parseInt($(this).text()) + parseInt(total);
+                // $(this).next('td').text(total); //Extra
+                $("#hello").text(total);
+            });
+    </script> -->
+
+    <script>
+        var devit = 0;
+        var credit = 0;
+        $("tbody tr td:nth-child(3)").each(function(index){
+            totalDevit = parseInt($("tbody tr td:nth-child(3)").text()) + parseInt(devit);
+            $("#devit").text(totalDevit);
+        });
+    </script>
+</body>
+</html>
