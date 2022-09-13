@@ -31,4 +31,4 @@ if(isOk){
 */
 
 // Short Process For Output Fullname Value or Default Value
-isOk && console.log("Everything is ok");  // If isOk is true than print console or isOk is false than print empty. Only use one statement
+isOk && console.log("Everything is ok"); // If isOk is true than print console or isOk is false than print empty. Only use one statement
