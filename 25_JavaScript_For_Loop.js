@@ -59,11 +59,33 @@ for(var i = 100; i > 0; i--)
     }
 */
 
-var sum = 0;
-for(var i = 1; i <= 10; i++)
+/*
+    var sum = 0;
+    for(var i = 1; i <= 10; i++)
+    {
+        var result = sum + i;
+        console.log(sum + " + " + i + " = " + result);
+        sum = result;
+    }
+    console.log("Total = " + sum);
+*/
+
+//Array Data Print in For Loop
+/*
+    var data = ["Rayhan", "Rakib", "Ismail", "Tanzim", "Yasin"];
+    var text  = "";
+    for(var i = 0; i < data.length; i++)
+    {
+        text += data[i] + "\n";
+    }
+    console.log(text);
+*/
+
+//Number With Text Print
+var text = "";
+for(var i = 0; i < 10; i++)
 {
-    var result = sum + i;
-    console.log(sum + " + " + i + " = " + result);
-    sum = result;
+    text += "The Number is " + (i + 1) + '\n';
 }
-console.log("Total = " + sum);
+console.log(text);
+
