@@ -14,4 +14,7 @@ console.log(str.endsWith('My name')); // If str variable value End ('Rayhan') th
 console.log(str.toUpperCase()); // Make str variable value all upper case & output this value
 console.log(str.toLowerCase()); // Make str variable value all lower case & output this value
 
+var str2 = '   Rayhan   ';
+console.log(str2.trim()) // Remove Unwanted space in a variable
+
 console.log(str.split(' ')); // To use split make a sentense to array
