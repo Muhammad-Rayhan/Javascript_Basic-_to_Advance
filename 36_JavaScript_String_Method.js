@@ -18,3 +18,13 @@ var str2 = '   Rayhan   ';
 console.log(str2.trim()) // Remove Unwanted space in a variable
 
 console.log(str.split(' ')); // To use split make a sentense to array
+
+var text = "Bangladesh";
+console.log(text.length); // Length not a function, count any string total value
+
+var about = "Dhaka is our capital city";
+console.log(about.replace("Dhaka", "Khulna")); // Replace any string to another String
+
+var array = str.split(" ");
+console.log(array[1]);
+
