@@ -28,3 +28,5 @@ console.log(about.replace("Dhaka", "Khulna")); // Replace any string to another 
 var array = str.split(" ");
 console.log(array[1]);
 
+var aboutMyself = "Hello! My Name is Rayhan Hossain";
+console.log(aboutMyself.slice(18, 24));
