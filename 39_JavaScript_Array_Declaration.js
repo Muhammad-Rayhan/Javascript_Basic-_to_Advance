@@ -20,14 +20,5 @@ var strarry = Array(str, str1, str2);
 console.log(strarry);
 
 // Challange
-var num = [1, 5, 22, 9];
+var num = [1, 5, 22, 9, 10];
 // console.log(num.length); //Easy Way to Print Arrays Length
-var length = 0;
-while(true)
-{
-    if(num.charAt(length)){
-        break;
-    } else {
-        length++
-    }
-}
